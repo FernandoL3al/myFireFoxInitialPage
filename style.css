@@ -1,7 +1,7 @@
 
  
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@500&family=Phudu:wght@300&family=Tourney&display=swap');
---reddd: #aa0000;
+
 
 /* 
     font-family: 'Courgette', cursive;
@@ -21,20 +21,42 @@
 }
 
 body{
-  background-color: #333;
+  background-color: #111;
   color: #9a00ba;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
 }
 
 h1{
-  font-size: 30px;
+  font-size: 4.6rem;
   font-family: 'Tourney', cursive;
-  color: 
+  color: #aa0000;
+  text-transform: uppercase;
+  border: #aa0000 solid 0.3rem;
+  padding: .4rem;
+  border-radius: 20px;
+}
+h1:hover{
+  transition: 5s;
+  color: #9a00ba;
+  transform: rotate(0.5turn);
+}
+
+
+h3{
+  font-size: 1rem;
+  color: #00ff00;
+  font-family: 'Phudu', cursive;
+  letter-spacing: 2px;
 }
   
 .jap{
   font-family: 'Noto Sans JP', sans-serif;
-  color
+  font-language-override: 'jp';
+  color: #00ff00;
 }
