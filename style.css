@@ -20,43 +20,62 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #111;
-  color: #9a00ba;
+
+.container{
+
+  padding: 5rem;
+  background-color: #1b1b1b;
+  display: grid;
+  grid-template-areas: 2fr;
+  gap: 1rem, 3rem;
   height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10rem;
 }
 
+img{
+  border: #31bf85 solid; 
+  border-radius: 20px;
+  grid-area: 1;
+  justify-self: center;
+  align-self: center;
+  height: 20rem;
+}
 h1{
   font-size: 4.6rem;
   font-family: 'Tourney', cursive;
-  color: #aa0000;
+  color: #31bf85;
   text-transform: uppercase;
-  border: #aa0000 solid 0.3rem;
+  border: #31bf85 solid 0.3rem;
   padding: .4rem;
   border-radius: 20px;
+  grid-area: 1;
+  align-self: center;
+  justify-self: center;
 }
 h1:hover{
-  transition: 5s;
-  color: #9a00ba;
-  transform: rotate(0.5turn);
+  transition: 1s;
+  color: #cf6712;
 }
 
 
-h3{
-  font-size: 1rem;
-  color: #00ff00;
-  font-family: 'Phudu', cursive;
-  letter-spacing: 2px;
+.links{
+  display: flex;
+  grid-area: 6;
+  justify-self: center;
+  align-self: center;
+  border: #31bf85 solid;
+  border-radius: 20px;
+  gap: 3rem;
+  padding: 3rem;
 }
-  
-.jap{
-  font-family: 'Noto Sans JP', sans-serif;
-  font-language-override: 'jp';
-  color: #00ff00;
+.link a{
+  text-decoration: line-through;
+  color: #31bf85;
+  font-size: 30px;
+  font-family:  'Phudu', cursive;
 }
+.link a:hover{
+  transition: 0.8s;
+  color: #cf6712;
+}
+
+
